@@ -5,51 +5,51 @@
 /* другорядний колір фону #F5F5F5; */
 
 :root {
-    --primary-text-color: rgba(0,0,0, 0.8);
+    --primary-text-color: rgba(0,0,0, 0.6);
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --primary-fon-color: #757575;
+    --fon-color: ECECEC;
 }
 
 body {
     background-color: var(--primary-white-color);
     color: var(--title-text-color);
     font-family: 'Roboto', sans-serif;
-    letter-spacing: -0,015em;
+    /* letter-spacing: 0,02em; */
 }
 
+/* хедер */
+
 .logo {
+    text-decoration: none;
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
 }
-.logo:hover {
+
+.logo :hover,
+.logo :focus {
     color: var(--accent-color);
 }
+
 .header-logo-text {
     color: var(--title-text-color);  
 }
 
-.header-logo-text:active {
-    color: aqua;
-}
-
-.header-logo-text {
-    color: var(--primary-text-color);
-}
-.header-logo-text:hover {
-    color: var(--accent-color);
-}
-
-
-/* .page {
-    color: var(--primary-white-color);
-} */
-
 .header-navigation-ofis,
 .header-navigation-portfilio,
 .header-navigation-contact {
+    text-decoration: none;
+    cursor: pointer;
     color: var(--title-text-color);
-    font-style: Medium;
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
 }
@@ -63,137 +63,208 @@ body {
 .header-navigation-ofis:focus,
 .header-navigation-portfilio:focus,
 .header-navigation-contact:focus {
-    color: aqua;
+    color: var(--accent-color);
 }
 
 .header-navigation-contact-accent,
 .header-navigation-contact-item {
-    color: #757575;
-    font-style: Medium;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.1px;
+    letter-spacing: 0.02em;
+    color: var(--primary-fon-color);
 }
 
-/* .header-navigation-ofis.current {
+.header-navigation-contact-accent:hover,
+.header-navigation-contact-item:hover {
     color: var(--accent-color);
 }
 
-.header-navigation-portfilio.current {
-    color: var(--accent-color);   
-} */
+/* кнопки */
 
-button {
+.main-hero button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     font-size: 16px;
-    line-height: 1,9;
+    line-height: 1,2;
+    cursor: pointer;
 }
 
-.hero-but-oll {
+.main-hero button:hover,
+.main-hero button:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
-}
-
-.hero-but-oll:hover,
-.hero-but-oll:focus {
-    color: var(--accent-color);  
+    font-size: 18px;
+    line-height: 1,2;
 }
 
 .hero-but {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     background-color: #F5F4FA;
     color: var(--title-text-color);
+    cursor: pointer;
 }
 
 .hero-but:hover,
 .hero-but:focus {
-    color: var(--accent-color);  
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
+/* main */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-work .title {
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--title-text-color);
+}
+
+.comanda .title {  
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--title-text-color);
+
+}
 .quality {
-    font-family: Roboto;
-    font-style: bold;
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
 .quality-details {
-    font-family: Roboto;
-    font-style: Regular;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    color: #757575;
+    letter-spacing: 0.03em;
+    color: var(--primary-fon-color);
 }
 
 .comanda-one-of {
-    font-family: Roboto;
-    font-style: Medium;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
+
 }
 
 .position {
-    font-family: Roboto;
-    font-style: Regular;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: #757575;
 }
 
-.about h3 {
-    font-family: Roboto;
-    font-style: Bold;
+
+.about-main .project {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--title-text-color);
-} 
+}
 
-.about p {
-    font-family: Roboto;
-    font-style: Regular;
+.about-main .text {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 3;
-    color: #757575;
+    letter-spacing: 0.03em;
+    color: var(--primary-fon-color);
+    text-decoration: none;
+}
+
+.about-main .link {
+    text-decoration: none;
 }
 
 /* footer */
 
 footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
     font-family: 'Roboto', sans-serif;
 }
-
 footer a {
     color: var(--primary-white-color);   
-
 }
-
 .footer-logo-text {
+   display: inline-block;
+    padding-bottom: 20px;
     color: var(--primary-white-color);
     font-family: 'Raleway', sans-serif;
 }
-
 .footer-address {
+    display: inline-block;
+    padding-bottom: 9px;
+    text-decoration: none;
     font-family: Roboto;
-    font-style: Regular;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     color: var(--primary-white-color);
 }
 .footer-contact-accent,
 .footer-contact-item {
+    display: inline-block;
+    padding-bottom: 9px;
+    text-decoration: none;
     font-family: Roboto;
-    font-style: Regular;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
 
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
