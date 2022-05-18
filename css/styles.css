@@ -1,5 +1,5 @@
 /* колір oсновного тексту #212121; */
-/* другорядний колір тексту rgba(0,0,0, 0.8); */
+/* другорядний колір тексту rgba(0,0,0, 0.6); */
 /* білий #ffffff; */
 /* акцент #2196F3; */
 /* другорядний колір фону #F5F5F5; */
@@ -17,7 +17,7 @@ body {
     background-color: var(--primary-white-color);
     color: var(--title-text-color);
     font-family: 'Roboto', sans-serif;
-    /* letter-spacing: 0,02em; */
+    letter-spacing: 0,03em;
 }
 
 /* хедер */
@@ -26,7 +26,6 @@ body {
     text-decoration: none;
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2px;
@@ -39,7 +38,7 @@ body {
 }
 
 .header-logo-text {
-    color: var(--title-text-color);  
+    color: var(--title-text-color);
 }
 
 .header-navigation-ofis,
@@ -47,8 +46,7 @@ body {
 .header-navigation-contact {
     text-decoration: none;
     cursor: pointer;
-    color: var(--title-text-color);
-    font-style: normal;
+    color: currentColor;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -69,7 +67,6 @@ body {
 .header-navigation-contact-accent,
 .header-navigation-contact-item {
     text-decoration: none;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1px;
@@ -83,6 +80,21 @@ body {
 }
 
 /* кнопки */
+
+.main-hero {
+    background-color: #2F303A;
+}
+
+.main-hero .title {
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+    
+}
 
 .main-hero button {
     background-color: var(--accent-color);
@@ -101,13 +113,10 @@ body {
 }
 
 .hero-but {
-    font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    letter-spacing: 0.03em;
-    background-color: #F5F4FA;
-    color: var(--title-text-color);
     cursor: pointer;
 }
 
@@ -133,39 +142,31 @@ body {
 }
 
 .main-work .title {
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
-
 color: var(--title-text-color);
 }
 
 .comanda .title {  
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
-
 color: var(--title-text-color);
 
 }
 .quality {
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
 }
 
 .quality-details {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -173,30 +174,21 @@ color: var(--title-text-color);
 }
 
 .comanda-one-of {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-
 }
 
 .position {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-fon-color);
 }
-
 
 .about-main .project {
     text-decoration: none;
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -205,14 +197,10 @@ color: var(--title-text-color);
 }
 
 .about-main .text {
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--primary-fon-color);
-    text-decoration: none;
 }
 
 .about-main .link {
@@ -225,7 +213,6 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
-    font-family: 'Roboto', sans-serif;
 }
 footer a {
     color: var(--primary-white-color);   
@@ -240,9 +227,7 @@ footer a {
     display: inline-block;
     padding-bottom: 9px;
     text-decoration: none;
-    font-family: Roboto;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -253,14 +238,11 @@ footer a {
     display: inline-block;
     padding-bottom: 9px;
     text-decoration: none;
-    font-family: Roboto;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-
 }
 
 ul {
